@@ -1,12 +1,16 @@
-package com.stormnet.server;
+package com.stormnet.serverservice;
 
+import com.stormnet.serverservice.web.common.Command;
+import com.stormnet.serverservice.web.common.Request;
+import com.stormnet.serverservice.web.common.Response;
+import com.stormnet.serverservice.web.impl.CommandFactory;
+import com.stormnet.serverservice.web.socket.ResponseCode;
+import com.stormnet.serverservice.web.socket.SocketJsonRequest;
+import com.stormnet.serverservice.web.socket.SocketJsonResponse;
 import org.json.JSONTokener;
 import org.json.JSONWriter;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -96,4 +100,5 @@ public class Server {
         response.getJsonWriter().key("status-message").value(response.getStatusMessage());
         response.getJsonWriter().endObject();
     }
+
 }
