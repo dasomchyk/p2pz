@@ -17,9 +17,9 @@ import java.net.Socket;
 public class Server {
 
     public static void main(String[] args) throws IOException {
-        ServerSocket serverSocket = new ServerSocket(1111);
+        ServerSocket serverSocket = new ServerSocket(8848);
 
-        System.out.println("Server started");
+        System.out.println("Server connected...");
 
         while (true) {
             Socket clientSocket = serverSocket.accept();
@@ -100,5 +100,4 @@ public class Server {
         response.getJsonWriter().key("status-message").value(response.getStatusMessage());
         response.getJsonWriter().endObject();
     }
-
 }
