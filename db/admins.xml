@@ -3,4 +3,5 @@
 
 <person firstName="Dzmitry" id="35" lastName="Asomchyk" login="ad" password="123"/>
 <person firstName="di" id="40" lastName="di" login="admin1" password="123"/>
+<person firstName="qwert" id="44" lastName="qwert" login="admin" password="123"/>
 </admins-db>
