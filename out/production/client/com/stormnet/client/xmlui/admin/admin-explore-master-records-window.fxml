@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="497.0" prefWidth="695.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.261" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.stormnet.client.controllers.admin.AdminExploreMasterRecordsController">
+
+    <padding>
+        <Insets bottom="10" left="25" right="25" top="25" />
+    </padding>
+
+    <HBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <Button mnemonicParsing="false" onAction="#closeBtnPressed" text="Close" />
+    </HBox>
+
+    <HBox alignment="CENTER_LEFT" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <Label text="List of This Master Records:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <CheckBox fx:id="showThisDayRecords" contentDisplay="CENTER" mnemonicParsing="false" onAction="#reloadWindow" prefHeight="17.0" prefWidth="176.0" text="Show Only This Day Records">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+                <Insets left="50.0" />
+            </HBox.margin>
+        </CheckBox>
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="2">
+
+        <TableView fx:id="allRecordsTable" prefHeight="400.0" prefWidth="662.0">
+            <columns>
+                <TableColumn prefWidth="80.00000250339508" text="Record Id">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="137.9999771118164" text="Date">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="date" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="124.66670227050781" text="Time">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="time" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </HBox>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+
+</GridPane>

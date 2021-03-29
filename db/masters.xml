@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<masters-db>
+
+<person cabinet="123" firstName="Galina" id="34" lastName="Kolesnikova" login="master" password="123"/>
+<person cabinet="123" firstName="qwerty" id="39" lastName="qwerty" login="master2" password="123"/>
+</masters-db>

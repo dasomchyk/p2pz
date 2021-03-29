@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<admins-db>
+
+<person firstName="Dzmitry" id="35" lastName="Asomchyk" login="ad" password="123"/>
+<person firstName="di" id="40" lastName="di" login="admin1" password="123"/>
+</admins-db>

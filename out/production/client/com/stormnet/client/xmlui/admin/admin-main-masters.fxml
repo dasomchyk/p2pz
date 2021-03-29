@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="497.0" prefWidth="695.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.261" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.stormnet.client.controllers.admin.AdminMainMastersController">
+
+    <padding>
+        <Insets bottom="10" left="25" right="25" top="25" />
+    </padding>
+
+    <HBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <SplitMenuButton fx:id="tableContent" mnemonicParsing="false" text="Table Content">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#allRecordsMenuSelected" text="All Records" />
+                <MenuItem mnemonicParsing="false" onAction="#allClientsMenuSelected" text="All Clients" />
+                <MenuItem mnemonicParsing="false" onAction="#allMastersMenuSelected" text="All Masters" />
+            </items>
+        </SplitMenuButton>
+        <Button mnemonicParsing="false" onAction="#personalCabinetBtnPressed" text="Personal Cabinet" />
+        <Button mnemonicParsing="false" onAction="#exitBtnPressed" text="Exit" />
+    </HBox>
+
+    <HBox alignment="BOTTOM_LEFT" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <Label text="List of All Masters:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="2">
+
+        <TableView fx:id="allMastersTable" prefHeight="400.0" prefWidth="662.0">
+            <columns>
+                <TableColumn prefWidth="80" text="Master Id">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="125" text="First Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="firstName" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="110.0" text="Last Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="lastName" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="70.0" text="Cabinet">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="cabinet" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </HBox>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+
+</GridPane>
