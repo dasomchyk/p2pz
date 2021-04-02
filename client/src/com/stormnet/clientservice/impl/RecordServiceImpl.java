@@ -130,7 +130,7 @@ public class RecordServiceImpl implements RecordService {
 
                 String masterLastNameStr = (String) object.get("masterLastName");
 
-                String masterFirstNameStr = (String) object.get("masterFirstName");
+                String masterFirstNameStr = object.getString("masterFirstName");
 
                 String clientLastNameStr = (String) object.get("clientLastName");
 

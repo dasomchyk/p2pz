@@ -17,7 +17,7 @@ public class CommandFactory {
 
     public CommandFactory() {
         commands.put("get-all-records", new GetAllRecordsCommand());
-        commands.put("save-records", new SaveRecordCommand());
+        commands.put("save-record", new SaveRecordCommand());
         commands.put("get-records", new GetRecordCommand());
         commands.put("delete-records", new DeleteRecordCommand());
         commands.put("update-records",  new UpdateRecordCommand());

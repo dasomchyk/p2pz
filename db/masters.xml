@@ -3,4 +3,5 @@
 
 <person cabinet="123" firstName="Galina" id="34" lastName="Kolesnikova" login="master" password="123"/>
 <person cabinet="123" firstName="qwerty" id="39" lastName="qwerty" login="master2" password="123"/>
+<person cabinet="333" firstName="mike" id="47" lastName="mike" login="123" password="123"/>
 </masters-db>

@@ -97,7 +97,7 @@ public class Record extends Id {
         return this.masterFirstName;
     }
 
-    public void setMasterFirstName(String doctorFirstName) {
+    public void setMasterFirstName(String masterFirstName) {
         this.masterFirstName = masterFirstName;
     }
 

@@ -1,8 +1,8 @@
 package com.stormnet.serverservice.web.impl;
 
 import com.stormnet.ja.Record;
-import com.stormnet.clientservice.RecordService;
-import com.stormnet.clientservice.factory.ServiceFactory;
+import com.stormnet.serverservice.RecordService;
+import com.stormnet.serverservice.factory.ServiceFactory;
 import com.stormnet.serverservice.web.common.Command;
 import com.stormnet.serverservice.web.common.Request;
 import com.stormnet.serverservice.web.common.Response;
@@ -18,11 +18,7 @@ public class GetAllRecordsCommand implements Command {
 
         RecordService recordService = ServiceFactory.getServiceFactory().getRecordService();
         List<Record> records = null;
-        try {
-            records = recordService.loadAll();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        records = recordService.loadAll();
 
         response.getJsonWriter().key("response-ja");
         response.getJsonWriter().array();

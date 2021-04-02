@@ -8,4 +8,5 @@
 <person firstName="dz" id="41" lastName="as" login="user" password="123"/>
 <person firstName="d" id="42" lastName="a" login="client2" password="123"/>
 <person firstName="dima" id="43" lastName="asom" login="as" password="123"/>
+<person firstName="mike" id="45" lastName="mike" login="123" password="123"/>
 </clients-db>

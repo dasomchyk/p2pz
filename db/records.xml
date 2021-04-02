@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <records-db>
 
-<record cabinet="123" clientComment="dthdthbstdgbdsrbdbd" clientFirstName="Ivan" clientId="2" clientLastName="Ivanov" date="2020-06-29" masterComment="fsrgsrgsrhgsrsg4wg4sgfs4frsfrs" masterFirstName="Andrey" masterId="3" masterLastName="Larin" id="5" isFinished="true" rating="2" time="8:00"/>
-<record cabinet="123" clientComment="dstnfynfynfyvsrvsrb" clientFirstName="Ivan" clientId="2" clientLastName="Ivanov" date="2020-06-30" masterComment="gdsnbfnsfnf" masterFirstName="Andrey" doctorId="3" masterLastName="Larin" id="6" isFinished="true" rating="2" time="8:00"/>
-<record cabinet="432" clientComment="" clientFirstName="Ivan" clientId="2" clientLastName="Ivanov" date="2020-07-02" masterComment="" masterFirstName="Mike" masterId="12" masterLastName="Lux" id="8" isFinished="false" rating="" time="9:00"/>
+<record cabinet="123" clientComment="dthdthbstdgbdsrbdbd" clientFirstName="Ivan" clientId="2" clientLastName="Ivanov" date="2020-06-29" id="5" isFinished="true" masterComment="fsrgsrgsrhgsrsg4wg4sgfs4frsfrs" masterFirstName="Andrey" masterId="3" masterLastName="Larin" rating="2" time="8:00"/>
 
-<record cabinet="123" clientComment="" clientFirstName="Ivan" clientId="2" clientLastName="Ivanov" date="2020-07-01" masterComment="" masterFirstName="Andrey" masterId="3" masterLastName="Larin" id="11" isFinished="false" rating="" time="11:00"/>
-<record cabinet="432" clientComment="" clientFirstName="Ivan" clientId="2" clientLastName="Ivanov" date="2020-07-02" masterComment="" masterFirstName="Mike" masterId="12" masterLastName="Lux" id="15" isFinished="false" rating="" time="15:00"/>
+<record cabinet="123" clientComment="dstnfynfynfyvsrvsrb" clientFirstName="Ivan" clientId="2" clientLastName="Ivanov" date="2020-06-30" doctorId="3" id="6" isFinished="true" masterComment="gdsnbfnsfnf" masterFirstName="Andrey" masterId="3" masterLastName="Larin" rating="2" time="8:00"/>
+<record cabinet="432" clientComment="" clientFirstName="Ivan" clientId="2" clientLastName="Ivanov" date="2020-07-02" id="8" isFinished="false" masterComment="" masterFirstName="Mike" masterId="12" masterLastName="Lux" rating="" time="9:00"/>
+
+<record cabinet="123" clientComment="" clientFirstName="Ivan" clientId="2" clientLastName="Ivanov" date="2020-07-01" id="11" isFinished="false" masterComment="" masterFirstName="Andrey" masterId="3" masterLastName="Larin" rating="" time="11:00"/>
+<record cabinet="432" clientComment="" clientFirstName="Ivan" clientId="2" clientLastName="Ivanov" date="2020-07-02" id="15" isFinished="false" masterComment="" masterFirstName="Mike" masterId="12" masterLastName="Lux" rating="" time="15:00"/>
+<record cabinet="123" clientFirstName="mike" clientId="45" clientLastName="mike" date="2021-04-07" id="46" isFinished="false" masterFirstName="Galina" masterId="34" masterLastName="Kolesnikova" rating="" time="11:00"/>
+<record cabinet="333" clientFirstName="mike" clientId="45" clientLastName="mike" date="2021-04-14" id="48" isFinished="false" masterFirstName="mike" masterId="47" masterLastName="mike" rating="" time="15:00"/>
 </records-db>
